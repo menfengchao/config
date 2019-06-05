@@ -1,9 +1,2 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.33.66:8761/eureka/
-  instance:
-    instance-id: ${spring.application.name}:${server.port}:@project.version@
-    prefer-ip-address: true
-    ip-address: 192.168.33.66
-    #hostname: clientHostName
+foo:
+    45451212
