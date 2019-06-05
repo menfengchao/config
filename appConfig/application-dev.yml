@@ -1,0 +1,23 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+       server:
+         git:
+           uri: https://gitee.com/poseidons/springconfig.git
+           search-paths: /test
+           username: 270370704@qq.com
+           password: yangjuntao43
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://180.76.159.181:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    prefer-ip-address: true
+    ip-address: 180.76.159.181
+    #hostname: clientHostName
