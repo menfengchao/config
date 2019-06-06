@@ -1,1 +1,6 @@
 foo: 666666
+access-contrl:
+  enable: false
+  whiteList:
+    - "172.22.25.96"
+    - "127.0.0.1"
